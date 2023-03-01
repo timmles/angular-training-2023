@@ -1,5 +1,5 @@
 <h1>{{title}}</h1>
 {{ summary() }}
 
-<p *ngFor="let item of thingsToDo; let i = index">({{i}}) {{item}}</p>
+<app-todo-list [todoList]="thingsToDo"></app-todo-list>
 <p *ngIf="thingsCompleted.length === 0">Nothing completed</p>
