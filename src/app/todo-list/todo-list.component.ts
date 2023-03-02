@@ -7,6 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class TodoListComponent {
   @Input()
-  todoList: string[] = []
-
+  thingsToDo: string[] = []
 }
