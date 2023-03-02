@@ -1,0 +1,11 @@
+<div [ngSwitch]="switchVal">
+  <app-switch-one *ngSwitchCase="true"></app-switch-one>
+  <app-switch-two *ngSwitchCase="false"></app-switch-two>
+</div>
+<button (click)="doSwitch()">switch</button>
+
+<ul>
+  <ng-template ngFor [ngForOf]="myValues" let-item let-i="index">
+    <li [ngClass]="{blue: i>5}">{{item}}</li>
+  </ng-template>
+</ul>
