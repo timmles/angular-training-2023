@@ -18,6 +18,7 @@ import { SwitchTwoComponent } from './switch-two/switch-two.component';
 import { SwitchExampleComponent } from './switch-example/switch-example.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { ObservablesComponent } from './observables/observables.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { ObservablesComponent } from './observables/observables.component';
     MatListModule,
     MatIconModule,
     MatChipsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,8 +1,10 @@
 <div class="wrapper">
   <mat-toolbar color="primary">{{ title }}</mat-toolbar>
-  <app-todo-summary [thingsToDo]="thingsToDo"></app-todo-summary>
 
-  <app-todo-list [(thingsToDo)]="thingsToDo"></app-todo-list>
+  <div *ngIf="(getAllTodos | async) as myData">
+    <app-todo-summary [thingsToDo]="myData"></app-todo-summary>
+    <app-todo-list [thingsToDo]="myData" (thingsToDoDelete)="deleteTodo($event)"></app-todo-list>
+  </div>
 
   <app-generic-input (newItem)="addTodo($event)"></app-generic-input>
   <hr>
