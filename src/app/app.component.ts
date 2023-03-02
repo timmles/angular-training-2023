@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular Training';
-  thingsToDo = ['Learn JavaScript', 'Learn Angular', 'Learn Angular Material'];
-  thingsCompleted = [];
+  thingsToDo = [
+    'Learn JavaScript',
+    'Learn Angular',
+    'Learn Angular Material'
+  ]
+
+  addTodo(newTodo: string) {
+    this.thingsToDo.push(newTodo)
+  }
 }

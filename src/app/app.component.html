@@ -3,6 +3,7 @@
   <app-todo-summary [thingsToDo]="thingsToDo"></app-todo-summary>
 
   <app-todo-list [thingsToDo]="thingsToDo"></app-todo-list>
-  <p *ngIf="thingsCompleted.length === 0">Nothing completed</p>
+
+  <app-generic-input (newItem)="addTodo($event)"></app-generic-input>
   <app-footer></app-footer>
 </div>

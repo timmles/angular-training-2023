@@ -11,13 +11,15 @@ import { AppComponent } from './app.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { TodoSummaryComponent } from './todo-summary/todo-summary.component';
 import { FooterComponent } from './footer/footer.component';
+import { GenericInputComponent } from './generic-input/generic-input.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoListComponent,
     TodoSummaryComponent,
-    FooterComponent
+    FooterComponent,
+    GenericInputComponent
   ],
   imports: [
     BrowserModule,
