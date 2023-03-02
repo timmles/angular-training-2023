@@ -12,4 +12,8 @@ export class AppComponent {
     'Learn Angular',
     'Learn Angular Material'
   ]
+
+  addTodo(newTodo: string) {
+    this.thingsToDo.push(newTodo)
+  }
 }

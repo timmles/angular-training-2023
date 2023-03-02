@@ -11,6 +11,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatChipsModule } from '@angular/material/chips';
 import { TodoSummaryComponent } from './todo-summary/todo-summary.component';
 import { FooterComponent } from './footer/footer.component';
+import { GenericInputComponent } from './generic-input/generic-input.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { FooterComponent } from './footer/footer.component';
     AppComponent,
     TodoListComponent,
     TodoSummaryComponent,
-    FooterComponent
+    FooterComponent,
+    GenericInputComponent
   ],
   imports: [
     BrowserModule,
