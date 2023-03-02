@@ -1,9 +1,11 @@
 <mat-list role="list">
-  <mat-list-item role="listitem"
-                 *ngFor="let item of thingsToDo; let i = index"
-                 id="{{i}}">
+  <mat-list-item
+    role="listitem"
+    *ngFor="let item of thingsToDo; let i = index"
+    id="{{ i }}"
+  >
     <mat-icon mat-list-icon>task</mat-icon>
-    {{item}}
+    {{ item }}
     <button (click)="deleteTodo(i)">-</button>
   </mat-list-item>
 </mat-list>
