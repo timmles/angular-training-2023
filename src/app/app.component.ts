@@ -12,7 +12,4 @@ export class AppComponent {
     'Learn Angular',
     'Learn Angular Material'
   ]
-  thingsCompleted = []
-
-
 }
