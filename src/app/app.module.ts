@@ -13,6 +13,9 @@ import { TodoSummaryComponent } from './todo-summary/todo-summary.component';
 import { FooterComponent } from './footer/footer.component';
 import { GenericInputComponent } from './generic-input/generic-input.component';
 import { FormsModule } from '@angular/forms';
+import { SwitchOneComponent } from './switch-one/switch-one.component';
+import { SwitchTwoComponent } from './switch-two/switch-two.component';
+import { SwitchExampleComponent } from './switch-example/switch-example.component';
 
 
 @NgModule({
@@ -21,7 +24,10 @@ import { FormsModule } from '@angular/forms';
     TodoListComponent,
     TodoSummaryComponent,
     FooterComponent,
-    GenericInputComponent
+    GenericInputComponent,
+    SwitchOneComponent,
+    SwitchTwoComponent,
+    SwitchExampleComponent
   ],
   imports: [
     BrowserModule,
