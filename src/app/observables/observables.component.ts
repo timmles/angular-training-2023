@@ -8,7 +8,6 @@ import { filter, interval, map } from 'rxjs';
 })
 export class ObservablesComponent {
 
-  output: string = ''
   source = interval(1000)
       .pipe(
         filter(it => it % 2 == 0 ),
