@@ -16,6 +16,7 @@ import { FormsModule } from '@angular/forms';
 import { SwitchOneComponent } from './switch-one/switch-one.component';
 import { SwitchTwoComponent } from './switch-two/switch-two.component';
 import { SwitchExampleComponent } from './switch-example/switch-example.component';
+import { CalculatorComponent } from './calculator/calculator.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { SwitchExampleComponent } from './switch-example/switch-example.componen
     GenericInputComponent,
     SwitchOneComponent,
     SwitchTwoComponent,
-    SwitchExampleComponent
+    SwitchExampleComponent,
+    CalculatorComponent
   ],
   imports: [
     BrowserModule,
