@@ -12,6 +12,7 @@ import { TodoListComponent } from './todo-list/todo-list.component';
 import { TodoSummaryComponent } from './todo-summary/todo-summary.component';
 import { FooterComponent } from './footer/footer.component';
 import { GenericInputComponent } from './generic-input/generic-input.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { GenericInputComponent } from './generic-input/generic-input.component';
     MatToolbarModule,
     MatListModule,
     MatIconModule,
-    MatChipsModule
+    MatChipsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

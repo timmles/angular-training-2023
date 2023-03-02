@@ -8,7 +8,10 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class GenericInputComponent {
   @Output() newItem: EventEmitter<string> = new EventEmitter<string>()
 
-  addTodo(todo: HTMLInputElement) {
-    this.newItem.emit(todo.value)
+  inputString: string = ''
+
+  addTodo() {
+    this.newItem.emit(this.inputString)
+    this.inputString = ''
   }
 }
