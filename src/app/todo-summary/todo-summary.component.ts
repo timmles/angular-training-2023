@@ -7,9 +7,9 @@ import { Component, Input } from '@angular/core';
 })
 export class TodoSummaryComponent {
   @Input()
-  thingsToDo: string[] = []
+  thingsToDo: string[] = [];
 
   summary(): string {
-    return `${this.thingsToDo.length} to do / ${this.thingsToDo.length} done`
+    return `${this.thingsToDo.length} to do / ${this.thingsToDo.length} done`;
   }
 }
