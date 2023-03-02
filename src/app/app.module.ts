@@ -12,6 +12,7 @@ import { MatChipsModule } from '@angular/material/chips';
 import { TodoSummaryComponent } from './todo-summary/todo-summary.component';
 import { FooterComponent } from './footer/footer.component';
 import { GenericInputComponent } from './generic-input/generic-input.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { GenericInputComponent } from './generic-input/generic-input.component';
     MatToolbarModule,
     MatListModule,
     MatIconModule,
-    MatChipsModule
+    MatChipsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
