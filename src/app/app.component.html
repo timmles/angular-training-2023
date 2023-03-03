@@ -1,18 +1,15 @@
 <div class="wrapper">
-  <mat-toolbar color="primary">{{ title }}</mat-toolbar>
-
-<!--  <div *ngIf="(getAllTodos | async) as myData">-->
-<!--    <app-todo-summary [thingsToDo]="myData"></app-todo-summary>-->
-<!--    <app-todo-list [thingsToDo]="myData" (thingsToDoDelete)="deleteTodo($event)"></app-todo-list>-->
-<!--  </div>-->
-
-<!--  <app-generic-input (newItem)="addTodo($event)"></app-generic-input>-->
-<!--  <hr>-->
-<!--  <app-switch-example></app-switch-example>-->
-<!--  <app-calculator></app-calculator>-->
-<!--  <app-observables></app-observables>-->
-<!--  <app-footer></app-footer>-->
-
-<!--  <app-template-form></app-template-form>-->
-  <app-reactive-form></app-reactive-form>
+  <mat-toolbar color="primary">{{ title }}
+    <div>
+      <a mat-button [routerLink]="['todo']" [routerLinkActive]="'active'">Todo</a>
+      <a mat-button [routerLink]="['fancy']" [routerLinkActive]="'active'">Fancy</a>
+      <a mat-button [routerLink]="['observable']" [routerLinkActive]="'active'">Observable</a>
+      <a mat-button [routerLink]="['calculator']" [routerLinkActive]="'active'">Calculator</a>
+      <a mat-button [routerLink]="['template-form']" [routerLinkActive]="'active'">Teamplate
+        Form</a>
+      <a mat-button [routerLink]="['reactive-form']" [routerLinkActive]="'active'">Reactive Form</a>
+    </div>
+  </mat-toolbar>
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
 </div>

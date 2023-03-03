@@ -8,10 +8,10 @@ import { MatChipsModule } from '@angular/material/chips';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TodoListComponent } from './todo-list/todo-list.component';
-import { TodoSummaryComponent } from './todo-summary/todo-summary.component';
+import { TodoListComponent } from './todo-view/todo-list/todo-list.component';
+import { TodoSummaryComponent } from './todo-view/todo-summary/todo-summary.component';
 import { FooterComponent } from './footer/footer.component';
-import { GenericInputComponent } from './generic-input/generic-input.component';
+import { GenericInputComponent } from './todo-view/generic-input/generic-input.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SwitchOneComponent } from './switch-one/switch-one.component';
 import { SwitchTwoComponent } from './switch-two/switch-two.component';
@@ -25,6 +25,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
+import { TodoViewComponent } from './todo-view/todo-view.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { MatButtonModule } from '@angular/material/button';
     CalculatorComponent,
     ObservablesComponent,
     TemplateFormComponent,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    TodoViewComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
