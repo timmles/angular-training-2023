@@ -12,13 +12,19 @@ import { TodoListComponent } from './todo-list/todo-list.component';
 import { TodoSummaryComponent } from './todo-summary/todo-summary.component';
 import { FooterComponent } from './footer/footer.component';
 import { GenericInputComponent } from './generic-input/generic-input.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SwitchOneComponent } from './switch-one/switch-one.component';
 import { SwitchTwoComponent } from './switch-two/switch-two.component';
 import { SwitchExampleComponent } from './switch-example/switch-example.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { ObservablesComponent } from './observables/observables.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TemplateFormComponent } from './template-form/template-form.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -31,7 +37,9 @@ import { HttpClientModule } from '@angular/common/http';
     SwitchTwoComponent,
     SwitchExampleComponent,
     CalculatorComponent,
-    ObservablesComponent
+    ObservablesComponent,
+    TemplateFormComponent,
+    ReactiveFormComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +50,12 @@ import { HttpClientModule } from '@angular/common/http';
     MatIconModule,
     MatChipsModule,
     FormsModule,
-    HttpClientModule
+    ReactiveFormsModule,
+    MatInputModule,
+    MatSelectModule,
+    HttpClientModule,
+    MatCheckboxModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,20 @@
+{{todo | json}}
+
+<form class="example-form" (ngSubmit)="createTodo()" #todoForm="ngForm">
+  <mat-form-field class="example-full-width">
+    <mat-label>Description</mat-label>
+    <input matInput #descriptionInput="ngModel" required minlength="3" maxlength="20" [(ngModel)]="todo.title" name="description" placeholder="What do you want to do?">
+  </mat-form-field>
+
+  <div *ngIf="descriptionInput.hasError('required') && descriptionInput.touched">
+    Description is required
+  </div>
+
+  <div *ngIf="descriptionInput.hasError('minlength') && descriptionInput.touched">
+    Description must have at least 3 characters
+  </div>
+
+  <mat-checkbox [(ngModel)]="todo.completed" name="completed">Completed</mat-checkbox>
+  <br>
+  <button mat-raised-button color="primary" [disabled]="todoForm.form.invalid">Create Todo</button>
+</form>

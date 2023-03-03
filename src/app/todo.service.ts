@@ -8,7 +8,7 @@ export class ToDo {
   title: string;
   completed: boolean;
 
-  constructor(userId: number, title: string, completed: boolean) {
+  constructor(userId: number = 0, title: string = '', completed: boolean = false) {
     this.userId = userId;
     this.title = title;
     this.completed = completed;
@@ -30,10 +30,14 @@ export class TodoService {
   }
 
   addTodo(todo: String) {
-    console.log("not implemented")
+    console.log(`not implemented: add todo: ${todo}`)
+  }
+
+  addTodoFull(todo: ToDo) {
+    console.log(`not implemented: add full todo: ${JSON.stringify(todo)}`)
   }
 
   deleteTodo(id: number) {
-    console.log("not implemented")
+    console.log(`not implemented: delete todo: ${id}`)
   }
 }
