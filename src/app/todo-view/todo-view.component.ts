@@ -8,11 +8,9 @@ import { TodoService } from '../todo.service';
   styleUrls: ['./todo-view.component.css']
 })
 export class TodoViewComponent {
-  getAllTodos: Observable<string[]> =
-    this.todoService
-    .getAllTodos().pipe(
-      map(data => data.map(todo => todo.title))
-    )
+  getAllTodos: Observable<string[]> = this.todoService
+    .getAllTodos()
+    .pipe(map((data) => data.map((todo) => todo.title)));
 
   constructor(private todoService: TodoService) {}
 

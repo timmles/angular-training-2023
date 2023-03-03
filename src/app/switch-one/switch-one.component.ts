@@ -5,6 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './switch-one.component.html',
   styleUrls: ['./switch-one.component.css']
 })
-export class SwitchOneComponent {
-
-}
+export class SwitchOneComponent {}

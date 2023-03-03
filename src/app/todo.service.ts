@@ -8,7 +8,11 @@ export class ToDo {
   title: string;
   completed: boolean;
 
-  constructor(userId: number = 0, title: string = '', completed: boolean = false) {
+  constructor(
+    userId: number = 0,
+    title: string = '',
+    completed: boolean = false
+  ) {
     this.userId = userId;
     this.title = title;
     this.completed = completed;
@@ -19,25 +23,23 @@ export class ToDo {
   providedIn: 'root'
 })
 export class TodoService {
+  private url = 'https://jsonplaceholder.typicode.com/todos';
 
-  private url = "https://jsonplaceholder.typicode.com/todos"
-
-  constructor(private http: HttpClient) {
-  }
+  constructor(private http: HttpClient) {}
 
   getAllTodos(): Observable<ToDo[]> {
-    return this.http.get<ToDo[]>(this.url)
+    return this.http.get<ToDo[]>(this.url);
   }
 
   addTodo(todo: String) {
-    console.log(`not implemented: add todo: ${todo}`)
+    console.log(`not implemented: add todo: ${todo}`);
   }
 
   addTodoFull(todo: ToDo) {
-    console.log(`not implemented: add full todo: ${JSON.stringify(todo)}`)
+    console.log(`not implemented: add full todo: ${JSON.stringify(todo)}`);
   }
 
   deleteTodo(id: number) {
-    console.log(`not implemented: delete todo: ${id}`)
+    console.log(`not implemented: delete todo: ${id}`);
   }
 }

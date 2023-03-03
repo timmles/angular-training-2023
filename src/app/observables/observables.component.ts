@@ -7,10 +7,8 @@ import { filter, interval, map } from 'rxjs';
   styleUrls: ['./observables.component.css']
 })
 export class ObservablesComponent {
-
-  source = interval(1000)
-      .pipe(
-        filter(it => it % 2 == 0 ),
-        map(it => `Hello world ${it}`)
-      )
+  source = interval(1000).pipe(
+    filter((it) => it % 2 == 0),
+    map((it) => `Hello world ${it}`)
+  );
 }

@@ -6,6 +6,6 @@
 
 <ul>
   <ng-template ngFor [ngForOf]="myValues" let-item let-i="index">
-    <li [ngClass]="{blue: i>5}">{{item}}</li>
+    <li [ngClass]="{ blue: i > 5 }">{{ item }}</li>
   </ng-template>
 </ul>

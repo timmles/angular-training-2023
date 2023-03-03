@@ -1,13 +1,31 @@
 <div class="wrapper">
-  <mat-toolbar color="primary">{{ title }}
+  <mat-toolbar color="primary"
+    >{{ title }}
     <div>
-      <a mat-button [routerLink]="['todo']" [routerLinkActive]="'active'">Todo</a>
-      <a mat-button [routerLink]="['fancy']" [routerLinkActive]="'active'">Fancy</a>
-      <a mat-button [routerLink]="['observable']" [routerLinkActive]="'active'">Observable</a>
-      <a mat-button [routerLink]="['calculator']" [routerLinkActive]="'active'">Calculator</a>
-      <a mat-button [routerLink]="['template-form']" [routerLinkActive]="'active'">Teamplate
-        Form</a>
-      <a mat-button [routerLink]="['reactive-form']" [routerLinkActive]="'active'">Reactive Form</a>
+      <a mat-button [routerLink]="['todo']" [routerLinkActive]="'active'"
+        >Todo</a
+      >
+      <a mat-button [routerLink]="['fancy']" [routerLinkActive]="'active'"
+        >Fancy</a
+      >
+      <a mat-button [routerLink]="['observable']" [routerLinkActive]="'active'"
+        >Observable</a
+      >
+      <a mat-button [routerLink]="['calculator']" [routerLinkActive]="'active'"
+        >Calculator</a
+      >
+      <a
+        mat-button
+        [routerLink]="['template-form']"
+        [routerLinkActive]="'active'"
+        >Teamplate Form</a
+      >
+      <a
+        mat-button
+        [routerLink]="['reactive-form']"
+        [routerLinkActive]="'active'"
+        >Reactive Form</a
+      >
     </div>
   </mat-toolbar>
   <router-outlet></router-outlet>

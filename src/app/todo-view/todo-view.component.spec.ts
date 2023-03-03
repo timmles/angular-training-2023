@@ -8,9 +8,8 @@ describe('TodoViewComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TodoViewComponent ]
-    })
-    .compileComponents();
+      declarations: [TodoViewComponent]
+    }).compileComponents();
 
     fixture = TestBed.createComponent(TodoViewComponent);
     component = fixture.componentInstance;

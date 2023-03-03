@@ -6,11 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./switch-example.component.css']
 })
 export class SwitchExampleComponent {
-  switchVal = true
-  myValues: number[] = []
+  switchVal = true;
+  myValues: number[] = [];
 
   doSwitch() {
-    this.switchVal = !this.switchVal
-    this.myValues.push(this.myValues.length)
+    this.switchVal = !this.switchVal;
+    this.myValues.push(this.myValues.length);
   }
 }

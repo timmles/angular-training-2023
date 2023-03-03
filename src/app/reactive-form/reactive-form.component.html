@@ -1,20 +1,44 @@
-{{todoFormGroup.value | json}}
+{{ todoFormGroup.value | json }}
 
-<form class="example-form" (ngSubmit)="createTodo()" [formGroup]="todoFormGroup">
+<form
+  class="example-form"
+  (ngSubmit)="createTodo()"
+  [formGroup]="todoFormGroup"
+>
   <mat-form-field class="example-full-width">
     <mat-label>Description</mat-label>
-    <input matInput required minlength="3" maxlength="20" [formControl]="descriptionFormControl" name="description" placeholder="What do you want to do?">
+    <input
+      matInput
+      required
+      minlength="3"
+      maxlength="20"
+      [formControl]="descriptionFormControl"
+      name="description"
+      placeholder="What do you want to do?"
+    />
   </mat-form-field>
 
-  <div *ngIf="descriptionFormControl.hasError('required') && descriptionFormControl.touched">
+  <div
+    *ngIf="
+      descriptionFormControl.hasError('required') &&
+      descriptionFormControl.touched
+    "
+  >
     Description is required
   </div>
 
-  <div *ngIf="descriptionFormControl.hasError('minlength') && descriptionFormControl.touched">
+  <div
+    *ngIf="
+      descriptionFormControl.hasError('minlength') &&
+      descriptionFormControl.touched
+    "
+  >
     Description must have at least 3 characters
   </div>
 
   <mat-checkbox name="completed">Completed</mat-checkbox>
-  <br>
-  <button mat-raised-button color="primary" [disabled]="todoFormGroup.invalid">Create Todo</button>
+  <br />
+  <button mat-raised-button color="primary" [disabled]="todoFormGroup.invalid">
+    Create Todo
+  </button>
 </form>

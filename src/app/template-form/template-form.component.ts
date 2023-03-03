@@ -7,13 +7,12 @@ import { ToDo, TodoService } from '../todo.service';
   styleUrls: ['./template-form.component.css']
 })
 export class TemplateFormComponent {
-  title: string = ''
-  todo: ToDo = new ToDo()
+  title: string = '';
+  todo: ToDo = new ToDo();
 
-  constructor(private todoService: TodoService) {
-  }
+  constructor(private todoService: TodoService) {}
 
   createTodo() {
-    this.todoService.addTodoFull(this.todo)
+    this.todoService.addTodoFull(this.todo);
   }
 }

@@ -8,13 +8,13 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { ObservablesComponent } from './observables/observables.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: '/todo', pathMatch: 'full'},
-  {path: 'todo', component: TodoViewComponent},
-  {path: 'calculator', component: CalculatorComponent},
-  {path: 'observable', component: ObservablesComponent},
-  {path: 'template-form', component: TemplateFormComponent},
-  {path: 'reactive-form', component: ReactiveFormComponent},
-  {path: '**', component: PageNotFoundComponent},
+  { path: '', redirectTo: '/todo', pathMatch: 'full' },
+  { path: 'todo', component: TodoViewComponent },
+  { path: 'calculator', component: CalculatorComponent },
+  { path: 'observable', component: ObservablesComponent },
+  { path: 'template-form', component: TemplateFormComponent },
+  { path: 'reactive-form', component: ReactiveFormComponent },
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({

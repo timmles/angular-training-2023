@@ -1,6 +1,9 @@
-<div *ngIf="(getAllTodos | async) as myData">
+<div *ngIf="getAllTodos | async as myData">
   <app-todo-summary [thingsToDo]="myData"></app-todo-summary>
-  <app-todo-list [thingsToDo]="myData" (thingsToDoDelete)="deleteTodo($event)"></app-todo-list>
+  <app-todo-list
+    [thingsToDo]="myData"
+    (thingsToDoDelete)="deleteTodo($event)"
+  ></app-todo-list>
 </div>
 
 <app-generic-input (newItem)="addTodo($event)"></app-generic-input>
